@@ -89,19 +89,61 @@ header {
 
 #city-type {
   color: #6b6b6c;
-  font-size: 38px;
-  background: #fff;
-  border: 1px solid #111;
+
+  font-size: 34px;
+  background: #fff ;
+  border: rgba(255, 255, 0, 0.5); 
   padding: 0px 30px;
   display: inline-block;
-  width: 680px;
+  width: 500px;
   margin-right: 24px;
   font-family: helvetica, arial, sans-serif;
   height: 72px;
   line-height: 74px;
   vertical-align: middle;
   box-shadow: #111 0 0 20px;
+  overflow: hidden;
+  
+  -webkit-appearance: none;
+  background: #fff url(../images/images20.png) no-repeat right ;
+  border-radius: 10px;
 }
+
+select option{
+  //margin: 40px;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  text-shadow: :0 1px 0 rgba(0,0,0,0.4);
+  outline: none;
+}
+
+option::selection {
+  background: grey;
+}
+select:active, select:hover {
+  outline: none;
+}
+
+select option:hover,
+    select option:focus,
+    select option:active {
+        background: linear-gradient(#000000, #000000);
+        background-color: #000000 !important; /* for IE */
+        color: #ffed00 !important;
+    }
+
+    select option:checked {
+        background: linear-gradient(#d6d6d6, #d6d6d6);
+        background-color: #d6d6d6 !important; /* for IE */
+        color: #000000 !important;
+    }
+
+    select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+
+   
+
 #submit-btn {
   background: #ffe500;
   color: #000;
@@ -119,9 +161,7 @@ header {
   font-family: helvetica, arial, sans-serif;
   cursor: pointer;
 }
-#submit-btn:hover {
-  background: #fff600;
-}
+
 
 .nyc {
   background-image: url(../images/nyc.jpg)
